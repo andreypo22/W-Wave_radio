@@ -1,0 +1,116 @@
+.show-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-color);
+
+  &__image {
+    vertical-align: bottom;
+    width: 100%;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 16px;
+    flex-grow: 1;
+
+    @include mobile {
+      padding: 10px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--color-black);
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  &__note {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-text-gray);
+
+    @include mobile {
+      font-size: 10px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--color-black);
+    transition: color .2s ease-in-out;
+
+    @include mobile {
+      font-size: 12px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      right: -6px;
+      bottom: -2px;
+      left: -6px;
+      background-color: var(--color-primary-light);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
+    }
+
+    &.focus-visible {
+      outline: none;
+      color: var(--color-white);
+
+      &::after {
+        opacity: 1;
+      }
+
+      & .show-card__icon {
+        fill: var(--color-white);
+      }
+    }
+
+    @include hover {
+      color: var(--color-primary);
+
+      .show-card__icon {
+        fill: var(--color-primary);
+      }
+    }
+
+    &:active {
+      color: var(--color-primary-shade);
+
+      .show-card__icon {
+        fill: var(--color-primary-shade);
+      }
+    }
+  }
+
+  &__icon {
+    width: 28px;
+    height: 12px;
+    fill: var(--color-black);
+    transition: fill .2s ease-in-out;
+  }
+}

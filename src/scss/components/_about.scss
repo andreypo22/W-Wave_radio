@@ -1,0 +1,135 @@
+.about {
+  background-color: var(--color-black);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--gap);
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @include tablet {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
+  }
+
+  &__info {
+    grid-column: 7 span;
+
+    @include tablet {
+      grid-column: 4 span;
+    }
+
+    @include mobile {
+      grid-column: 2 span;
+    }
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    color: var(--color-white);
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--color-text-gray);
+
+    @include mobile {
+      font-size: 14px;
+    }
+
+    &-fit {
+      margin-bottom: 8px;
+      font-weight: 700;
+      line-height: 150%;
+    }
+  }
+
+  &__image {
+    &-spiral {
+      grid-column: 2 span;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &-star {
+      grid-column: 3 span;
+
+      @include tablet {
+        grid-column: 2 span;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include small-tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__list {
+    grid-column: 12 span;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--gap);
+
+    @include tablet {
+      grid-column: 6 span;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include small-tablet {
+      grid-column: 4 span;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include mobile {
+      grid-column: 2 span;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    grid-column: 3 span;
+
+    @include small-tablet {
+      grid-column: 2 span;
+    }
+
+    @include mobile {
+      grid-column: 1 span;
+    }
+  }
+
+  &__feedback {
+    grid-column: 10 span;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
+
+    @include mobile {
+      grid-column: 2 span;
+    }
+  }
+}

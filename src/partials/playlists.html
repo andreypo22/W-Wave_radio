@@ -1,0 +1,465 @@
+<section class="playlists">
+  <div class="container playlists__container">
+    <div class="playlists__genres">
+      <h2 class="section-title playlists__title">Плейлисты</h2>
+      <form>
+        <fieldset class="playlists__genres-fieldset">
+          <legend class="playlists__genres-title">Жанр</legend>
+          <div class="playlists__genres-checks">
+            <div class="playlists__genres-check">
+              <input type="radio" id="contactChoice1" name="жанр" value="Постпанк" checked>
+              <label for="contactChoice1">Постпанк</label>
+            </div>
+            <div class="playlists__genres-check">
+              <input type="radio" id="contactChoice2" name="жанр" value="Хардкор">
+              <label for="contactChoice2">Хардкор</label>
+            </div>
+            <div class="playlists__genres-check">
+              <input type="radio" id="contactChoice3" name="жанр" value="Панк-рок">
+              <label for="contactChoice3">Панк-рок</label>
+            </div>
+            <div class="playlists__genres-check">
+              <input type="radio" id="contactChoice4" name="жанр" value="Рок">
+              <label for="contactChoice4">Рок</label>
+            </div>
+            <div class="playlists__genres-check">
+              <input type="radio" id="contactChoice5" name="жанр" value="Прогрессивный рок">
+              <label for="contactChoice5">Прогрессивный рок</label>
+            </div>
+            <div class="playlists__genres-check">
+              <input type="radio" id="contactChoice6" name="жанр" value="Электронная музыка">
+              <label for="contactChoice6">Электронная музыка</label>
+            </div>
+            <div class="playlists__genres-check">
+              <input type="radio" id="contactChoice7" name="жанр" value="Классическая музыка">
+              <label for="contactChoice7">Классическая музыка</label>
+            </div>
+            <div class="playlists__genres-check">
+              <input type="radio" id="contactChoice8" name="жанр" value="Звуки природы и шум города">
+              <label for="contactChoice8">Звуки природы и шум города</label>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="playlists__slider">
+      <div class="playlists__slider-pagination">
+        <button class="playlists__slider-prev playlists__slider-btn btn-reset">
+          <svg class="playlists__slider-icon">
+            <use xlink:href="img/sprite.svg#left-arrow"></use>
+          </svg>
+        </button>
+        <div class="playlists__slider-nav"></div>
+        <button class="playlists__slider-next playlists__slider-btn btn-reset">
+          <svg class="playlists__slider-icon">
+            <use xlink:href="img/sprite.svg#right-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="swiper playlists__swiper">
+        <div class="swiper-wrapper">
+           <div class="swiper-slide">
+            <ul class="list-reset playlists__list">
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/ploho.webp" type="image/webp">
+                      <img loading="lazy" src="img/ploho.jpg" class="group-card__image" width="160" height="160" alt="ploho">
+                    </picture>
+                    <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Ploho</h3>
+                    <p class="group-card__descr">3 последних альбома</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/molchat-doma.webp" type="image/webp">
+                      <img loading="lazy" src="img/molchat-doma.jpg" class="group-card__image" width="160" height="160" alt="molchat doma">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Molchat-doma</h3>
+                    <p class="group-card__descr">Все песни</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/motorama.webp" type="image/webp">
+                      <img loading="lazy" src="img/motorama.jpg" class="group-card__image" width="160" height="160" alt="motorama">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Motorama</h3>
+                    <p class="group-card__descr">Все синглы</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/human-tetris.webp" type="image/webp">
+                      <img loading="lazy" src="img/human-tetris.jpg" class="group-card__image" width="160" height="160" alt="human tetris">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Human tetris</h3>
+                    <p class="group-card__descr">3 последних альбома</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/buerak.webp" type="image/webp">
+                      <img loading="lazy" src="img/buerak.jpg" class="group-card__image" width="160" height="160" alt="буерак">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Буерак</h3>
+                    <p class="group-card__descr">Все ЕР</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/iulskie-dni.webp" type="image/webp">
+                      <img loading="lazy" src="img/iulskie-dni.jpg" class="group-card__image" width="160" height="160" alt="июльские дни">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Июльские Дни</h3>
+                    <p class="group-card__descr">Альбом "Колокол"</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/joy-division.webp" type="image/webp">
+                      <img loading="lazy" src="img/joy-division.jpg" class="group-card__image" width="160" height="160" alt="joy division">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Joy Division</h3>
+                    <p class="group-card__descr">Лучшее за все время</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/the-cure.webp" type="image/webp">
+                      <img loading="lazy" src="img/the-cure.jpg" class="group-card__image" width="160" height="160" alt="the cure">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">The Cure</h3>
+                    <p class="group-card__descr">Лучшее за все время</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/the-smiths.webp" type="image/webp">
+                      <img loading="lazy" src="img/the-smiths.jpg" class="group-card__image" width="160" height="160" alt="the smiths">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">The Smiths</h3>
+                    <p class="group-card__descr">Период 1984-1988</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/new-order.webp" type="image/webp">
+                      <img loading="lazy" src="img/new-order.jpg" class="group-card__image" width="160" height="160" alt="new order">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">New Order</h3>
+                    <p class="group-card__descr">Хиты</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/bauhaus.webp" type="image/webp">
+                      <img loading="lazy" src="img/bauhaus.jpg" class="group-card__image" width="160" height="160" alt="bauhaus">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Bauhaus</h3>
+                    <p class="group-card__descr">Все синглы</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/gung-of-four.webp" type="image/webp">
+                      <img loading="lazy" src="img/gung-of-four.jpg" class="group-card__image" width="160" height="160" alt="gung of four">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Gung Of Four</h3>
+                    <p class="group-card__descr">3 последних альбома</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+           </div>
+           <div class="swiper-slide">
+            <ul class="list-reset playlists__list">
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/ploho.webp" type="image/webp">
+                      <img loading="lazy" src="img/ploho.jpg" class="group-card__image" width="160" height="160" alt="ploho">
+                    </picture>
+                    <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Ploho</h3>
+                    <p class="group-card__descr">3 последних альбома</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/molchat-doma.webp" type="image/webp">
+                      <img loading="lazy" src="img/molchat-doma.jpg" class="group-card__image" width="160" height="160" alt="molchat doma">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Molchat-doma</h3>
+                    <p class="group-card__descr">Все песни</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/motorama.webp" type="image/webp">
+                      <img loading="lazy" src="img/motorama.jpg" class="group-card__image" width="160" height="160" alt="motorama">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Motorama</h3>
+                    <p class="group-card__descr">Все синглы</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/human-tetris.webp" type="image/webp">
+                      <img loading="lazy" src="img/human-tetris.jpg" class="group-card__image" width="160" height="160" alt="human tetris">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Human tetris</h3>
+                    <p class="group-card__descr">3 последних альбома</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/buerak.webp" type="image/webp">
+                      <img loading="lazy" src="img/buerak.jpg" class="group-card__image" width="160" height="160" alt="буерак">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Буерак</h3>
+                    <p class="group-card__descr">Все ЕР</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--ru"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/iulskie-dni.webp" type="image/webp">
+                      <img loading="lazy" src="img/iulskie-dni.jpg" class="group-card__image" width="160" height="160" alt="июльские дни">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Июльские Дни</h3>
+                    <p class="group-card__descr">Альбом "Колокол"</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/joy-division.webp" type="image/webp">
+                      <img loading="lazy" src="img/joy-division.jpg" class="group-card__image" width="160" height="160" alt="joy division">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Joy Division</h3>
+                    <p class="group-card__descr">Лучшее за все время</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/the-cure.webp" type="image/webp">
+                      <img loading="lazy" src="img/the-cure.jpg" class="group-card__image" width="160" height="160" alt="the cure">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">The Cure</h3>
+                    <p class="group-card__descr">Лучшее за все время</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/the-smiths.webp" type="image/webp">
+                      <img loading="lazy" src="img/the-smiths.jpg" class="group-card__image" width="160" height="160" alt="the smiths">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">The Smiths</h3>
+                    <p class="group-card__descr">Период 1984-1988</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/new-order.webp" type="image/webp">
+                      <img loading="lazy" src="img/new-order.jpg" class="group-card__image" width="160" height="160" alt="new order">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">New Order</h3>
+                    <p class="group-card__descr">Хиты</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/bauhaus.webp" type="image/webp">
+                      <img loading="lazy" src="img/bauhaus.jpg" class="group-card__image" width="160" height="160" alt="bauhaus">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Bauhaus</h3>
+                    <p class="group-card__descr">Все синглы</p>
+                  </div>
+                </article>
+              </li>
+              <li class="playlists__item">
+                <article class="group-card" tabindex="0">
+                  <span class="group-card__flag group-card__flag--gb"></span>
+                  <div class="group-card__foto">
+                    <picture>
+                      <source srcset="img/gung-of-four.webp" type="image/webp">
+                      <img loading="lazy" src="img/gung-of-four.jpg" class="group-card__image" width="160" height="160" alt="gung of four">
+                    </picture>
+                  <div class="group-card__effect"></div>
+                  </div>
+                  <div class="group-card__content">
+                    <h3 class="group-card__name">Gung Of Four</h3>
+                    <p class="group-card__descr">3 последних альбома</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="playlists__info">
+      <p class="playlists__info-descr">
+        Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних.
+      </p>
+      <span class="playlists__info-copyright">© 2021 l W-Wave</span>
+      <span class="playlists__info-old">18+</span>
+    </div>
+  </div>
+</section>
